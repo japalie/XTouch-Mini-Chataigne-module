@@ -14,7 +14,7 @@ var encoderContainer;
 var encoderValueParams = [];
 var encoderPressedParams = [];
 
-var buttonPitches = [89, 90, 40, 41, 42, 43, 44, 45, 87, 88, 91, 92, 86, 93, 94, 95];
+var buttonPitches = [89, 90, 40, 41, 42, 43, 44, 45, 87, 88, 91, 92, 86, 93, 94, 95, 84, 85];
 
 function init() {
     buttonModeContainer = local.parameters.getChild("Button Modes");
@@ -23,7 +23,7 @@ function init() {
     buttonContainer = local.values.getChild("Buttons");
     encoderContainer = local.values.getChild("Encoders");
 
-    for (var i = 0; i < 16; i++) {
+    for (var i = 0; i < 18; i++) {
         buttonModeParams[i] = buttonModeContainer.getChild("button" + (i + 1) + "ToggleMode");
         buttonPressedParams[i] = buttonContainer.getChild("button" + (i + 1));
     }
@@ -177,7 +177,7 @@ function getEncoderPressedForPitch(pitch) {
 }
 
 function getIndexForBT(bt) {
-    for (var i = 0; i < 16; i++) if (buttonPressedParams[i].is(bt)) return i;
+    for (var i = 0; i < 18; i++) if (buttonPressedParams[i].is(bt)) return i;
     return -1;
 }
 
