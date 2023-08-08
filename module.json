@@ -2,9 +2,9 @@
 	"name": "X-Touch MINI",
 	"type": "MIDI",
 	"path": "Hardware",
-	"version": "1.0.0",
-	"description": "Special MIDI Module for the Behringer X-Touch MINI",
-	"url": "https://github.com/benkuper/XTouch-Mini-Chataigne-module",
+	"version": "1.0.1",
+	"description": "Special MIDI Module for the Behringer X-Touch MINI Fork from benkuper",
+	"url": "https://github.com/japalie/XTouch-Mini-Chataigne-module",
 	"downloadURL": "https://github.com/benkuper/XTouch-Mini-Chataigne-module/archive/main.zip",
 	"hasInput": true,
 	"hasOutput": true,
@@ -64,6 +64,12 @@
 				"type": "Boolean"
 			},
 			"Button 16 Toggle Mode": {
+				"type": "Boolean"
+			},
+			"Button 17 Toggle Mode": {
+				"type": "Boolean"
+			},
+			"Button 18 Toggle Mode": {
 				"type": "Boolean"
 			}
 		},
@@ -212,6 +218,12 @@
 			},
 			"Button 16": {
 				"type": "Boolean"
+			},
+			"Button 17": {
+				"type": "Boolean"
+			},
+			"Button 18": {
+				"type": "Boolean"
 			}
 		},
 		"Encoders": {
@@ -298,7 +310,7 @@
 					"type": "Integer",
 					"default": 1,
 					"min": 1,
-					"max": 16
+					"max": 18
 				},
 				"Value": {
 					"type": "Boolean"
